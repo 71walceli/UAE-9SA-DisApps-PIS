@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Boton atras-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editar_empleado" />
+        </LinearLayout>
+    </Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView android:text="@string/cedula" />
+            <EditText android:hint="0987654321"
+                android:id="@+id/cedula"
+                android:inputType="number"
+                android:layout_gravity="fill_horizontal"
+                />
+
+            <TextView android:text="@string/nombre_y_apellido" />
+            <EditText android:hint="Filano Mengano"
+                android:id="@+id/nombre"
+                android:inputType="textPersonName"
+                android:layout_gravity="fill_horizontal"
+                />
+
+
+            <TextView android:text="Numero telefonico" />
+            <EditText android:hint="098 7654321"
+                android:id="@+id/numero"
+                android:inputType="phone"
+                android:layout_gravity="fill_horizontal"
+                />
+
+            <TextView android:text="Email" />
+            <EditText android:hint="email@dominio.com"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="fill_horizontal"/>
+
+            <TextView android:text="Rol" />
+            <Spinner android:id="@+id/select_rol"
+                android:layout_gravity="fill_horizontal"
+                />
+
+        </GridLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:textAlignment="center"
+        android:text="Guardar" />
+
+</LinearLayout>
