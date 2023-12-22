@@ -14,4 +14,8 @@ class MenuActivity : AppCompatActivity() {
     public fun formEmpleados(v: View) {
         startActivity(Intent(this, FormEmpleados::class.java))
     }
+
+    fun reconooncer_inflorescencias__onClick(view: View) {
+        startActivity(Intent(this, CapturaInflorescenciasActivity::class.java))
+    }
 }

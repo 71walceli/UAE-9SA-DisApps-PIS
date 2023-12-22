@@ -55,4 +55,7 @@
     <string name="editar_empleado">Editar empleado</string>
     <string name="cedula">Cedula</string>
     <string name="nombre_y_apellido">Nombre y Apellido</string>
+    <string name="title_activity_inflorescencias">InflorescenciasActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
