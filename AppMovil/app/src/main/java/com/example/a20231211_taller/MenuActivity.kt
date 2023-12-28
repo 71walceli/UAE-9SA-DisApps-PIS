@@ -16,6 +16,6 @@ class MenuActivity : AppCompatActivity() {
     }
 
     fun reconooncer_inflorescencias__onClick(view: View) {
-        startActivity(Intent(this, CapturaInflorescenciasActivity::class.java))
+        startActivity(Intent(this, InflorescenciasActivity::class.java))
     }
 }

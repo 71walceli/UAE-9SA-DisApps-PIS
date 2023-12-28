@@ -1,6 +1,5 @@
 package com.example.a20231211_taller
 
-import androidx.appcompat.app.AppCompatActivity
 import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
@@ -9,8 +8,8 @@ import android.os.Looper
 import android.view.MotionEvent
 import android.view.View
 import android.view.WindowInsets
-import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.a20231211_taller.databinding.ActivityInflorescenciasBinding
 
 /**
@@ -21,7 +20,7 @@ class CapturaInflorescenciasActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityInflorescenciasBinding
     private lateinit var fullscreenContent: TextView
-    private lateinit var fullscreenContentControls: LinearLayout
+    //private lateinit var fullscreenContentControls: LinearLayout
     private val hideHandler = Handler(Looper.myLooper()!!)
 
     @SuppressLint("InlinedApi")
@@ -83,15 +82,15 @@ class CapturaInflorescenciasActivity : AppCompatActivity() {
         isFullscreen = true
 
         // Set up the user interaction to manually show or hide the system UI.
-        fullscreenContent = binding.fullscreenContent
+        //fullscreenContent = binding.fullscreenContent
         //fullscreenContent.setOnClickListener { toggle() }
 
-        fullscreenContentControls = binding.fullscreenContentControls
+        //fullscreenContentControls = binding.fullscreenContentControls
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        binding.dummyButton.setOnTouchListener(delayHideTouchListener)
+        //binding.dummyButton.setOnTouchListener(delayHideTouchListener)
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {

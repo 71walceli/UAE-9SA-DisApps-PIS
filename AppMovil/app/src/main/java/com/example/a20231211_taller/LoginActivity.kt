@@ -3,6 +3,7 @@ package com.example.a20231211_taller
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.a20231211_taller.databinding.ActivityLoginBinding
 
@@ -30,6 +31,11 @@ class LoginActivity : AppCompatActivity() {
                 binding.statusText.setText("Revise sus credenciales")
                 binding.statusText.setTextColor(Color.RED)
             }
+        }
+
+        if (BuildConfig.DEBUG) {
+            startActivity(Intent(this, MenuActivity::class.java))
+            Toast.makeText(this, "Saltando por modo Desarrllador", Toast.LENGTH_SHORT)
         }
     }
 }
